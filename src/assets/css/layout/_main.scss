@@ -1,0 +1,13 @@
+.l-main{
+  position: relative;
+  display: block;
+  padding-top: 70px;
+
+  &.u-pt0{
+    padding-top: 0;
+  }
+
+  @media screen  {
+    padding-top: 52px;
+  }
+}

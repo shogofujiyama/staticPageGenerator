@@ -1,0 +1,16 @@
+extend /_commons/_base
+append variables
+  //- Required
+  - var pageTitle= "";
+  - var pageDescription= site.description;
+  - var pageKeywords= site.keywords;
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= site.ogpImage
+  - var pageLang= "ja_JP";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var alignCenter = true;
+  - var pageUrl= relativePath; 
+block content
+  h1 aaaaa

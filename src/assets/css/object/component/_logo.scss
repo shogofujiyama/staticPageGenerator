@@ -1,0 +1,9 @@
+.c-logo{
+  width: 264.5px;
+  height: 30px;
+
+  @media screen and #{$tab} {
+    width: 100%;
+    height: auto;
+  }
+}

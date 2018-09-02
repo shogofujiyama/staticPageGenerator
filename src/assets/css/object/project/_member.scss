@@ -1,0 +1,30 @@
+.p-member-board{
+  &>*{
+    @media screen and #{$tab} {
+      width: 50%;
+      margin-bottom: 0;
+    }
+    @media screen and #{$sp} {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .p-text-18{
+    margin-bottom: (22-(25.2-18)/2)+px;
+    @media screen and #{$sp} {
+      margin-bottom: 12px;
+    }
+  }
+
+  .p-text-14{
+  }
+
+}
+
+.gojuon { 
+  margin-top: 10px;
+  text-align: right;
+}

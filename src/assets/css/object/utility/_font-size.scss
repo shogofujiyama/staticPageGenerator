@@ -1,0 +1,11 @@
+/* font-size - utility
+--------------------------------------------------------- */
+
+// 指定するfont-sizeの範囲を定義
+$min: 10;
+$max: 100;
+@for $i from $min through $max {
+  .u-fsz#{$i} {
+    @include font($i)
+  }
+}

@@ -1,0 +1,60 @@
+.c-humberger {
+  display: none;
+
+  @media screen and #{$tab} {
+    display: block;
+  }
+
+	&__inner {
+		display: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 25px;
+    height: 18px;
+
+    span{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+
+      &:nth-of-type(1){
+        top: 0;
+        transition: all .4s;
+      }
+
+      &:nth-of-type(2) {
+        top: 8px;
+        transition: all .4s;
+      }
+
+      &:nth-of-type(3) {
+        bottom: 0;
+        transition: all .4s;
+      }
+    }
+
+    &.js-humberger-close{
+
+      span{
+        &:nth-of-type(1){
+          transform: translateY(8px) rotate(-45deg);
+          transition: all .4s;
+        }
+
+        &:nth-of-type(2) {
+          opacity: 0;
+          transition: all .4s;
+        }
+
+        &:nth-of-type(3) {
+          transform: translateY(-8px) rotate(45deg);
+          transition: all .4s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+//color
+$color-main: #062159;
+$color-section-title: #3e3e3e;
+$color-text-gray: #3e3e3e;
+
+$color-text: #231815;
+
+//break point
+$sp:  "(max-width:520px)";
+$sp-tab_to_sp:  "(min-width:520px) and (max-width:768px)";
+$sp-tab:  "(max-width:768px)";
+$tab_to_sp-tab:  "(min-width:768px) and (max-width:1001px)";
+$tab:  "(max-width:1001px)";
+//
+$max:  "(min-width:1151px)";
+
+@mixin flex{
+  -js-display: flex;
+  display: flex;
+}
+
+//フォントサイズ
+@mixin font($font-sz){
+  font-size: ($font-sz / 10) + rem;
+}
+
+//line-height
+@mixin lh($lh){
+  line-height: ($lh / 10) + rem;
+}
+
+//letter-spacing
+@mixin ls($ls){
+  letter-spacing: ($ls / 1000) + em;
+}
+
+//左右中央寄せ
+@mixin m-a{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//上下中央寄せ
+@mixin center{
+  position: relative;
+
+  & > *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//グラデーション
+//左→右
+@mixin gradient-left-to-right($leftcoler, $rightcolor){
+  background: -webkit-gradient(linear, left top, right bottom, from($leftcoler), to($rightcolor));
+  /*IE6 IE7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=$leftcoler, endcolorstr=$rightcolor);
+  /* IE8 IE9 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=$leftcoler, endcolorstr=$rightcolor))";
+  zoom: 1;
+  background: -moz-linear-gradient(right, $leftcoler, $rightcolor);/* FF3.6+ */
+  background: -webkit-linear-gradient(right, $leftcoler, $rightcolor);/* Chrome10+, Safari5.1+ */
+  background: linear-gradient(to right, $leftcoler, $rightcolor);/* IE10+, W3C */
+}

@@ -1,0 +1,11 @@
+/* line-height - utility
+--------------------------------------------------------- */
+
+// 指定するline-heightの範囲を定義
+$min: 10;
+$max: 100;
+@for $i from $min through $max {
+  .u-lh#{$i} {
+    @include lh($i);
+  }
+}

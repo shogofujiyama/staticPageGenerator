@@ -1,0 +1,39 @@
+/*
+  游ゴシック
+  @font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+  }
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
+.u-trajan{
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: normal;
+}
+
+.u-tsukushi{
+  font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","ＭＳ Ｐ明朝", "MS PMincho",serif;
+}

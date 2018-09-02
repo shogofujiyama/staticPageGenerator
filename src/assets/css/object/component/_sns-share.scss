@@ -1,0 +1,76 @@
+.c-sns-share {
+  -js-display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+  &>* {
+    @include lh(46);
+    width: 200px;
+    text-align: center;
+
+    @media screen and #{$tab} {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      @include font(14);
+      display: block;
+      color: #fff;
+      border-radius: 4px;
+
+      &>* {
+        @include font(18)
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.fa-hatena {
+
+  &:before {
+    content: "B!";
+    font-family: Verdana;
+    font-weight: bold;
+  }
+}
+/* ツイッター */
+.c-twitter a {
+background:#00acee;
+}
+.c-twitter a:hover,
+.c-twitter a:focus {
+background:#0092ca;
+}
+/* Facebook */
+.c-fb a {
+background:#3b5998;
+}
+.c-fb a:hover,
+.c-fb a:focus {
+background:#2c4373;
+}
+/* はてぶ */
+.c-hatena a {
+background:#008fde;
+}
+.c-hatena a:hover,
+.c-fb a:focus {
+background:#43638b;
+}
+/* LINE */
+.c-line a {
+background:#25af00;
+}
+.c-line a:hover,
+.c-fb a:focus {
+background:#219900;
+}

@@ -1,0 +1,25 @@
+header.l-header#js-menu
+  if !isTop
+    a(href=locals.site.url)
+      img.l-header__logo(src=locals.site.url + "assets/img/logo.png" alt="")
+  nav.l-header__list
+    //- TOPページでない場合
+    if pageTitle !== ""
+      .l-header__list-item
+        a.l-header__link(href=locals.site.url) Top
+    .l-header__list-item
+      a.l-header__link(href=locals.site.url + "profile") Profile
+    .l-header__list-item
+      a.l-header__link(href=locals.site.url + "news") News
+    .l-header__list-item
+      a.l-header__link(href=locals.site.url + "live") Live
+    .l-header__list-item
+      a.l-header__link(href=locals.site.url + "works") Works
+    .l-header__list-item
+      a.l-header__link(href=locals.site.url + "gallery") Gallery
+    .l-header__list-item
+      a.l-header__link(href="") Contact
+  button(id="js-menu-button" class=isTop ? "l-header__menu-button l-header__menu-button--white" : "l-header__menu-button")
+    span
+    span
+    span

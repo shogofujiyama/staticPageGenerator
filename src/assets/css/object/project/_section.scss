@@ -1,0 +1,37 @@
+.p-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  &__inner{
+    &--w_1000{
+      @include m-a;
+      width: 1000px;
+      @media screen and #{$tab} {
+        width: 100%;
+        padding-right: 4%;
+        padding-left: 4%;
+      }
+    }
+
+    &--w_700{
+      @include m-a;
+      width: 700px;
+      @media screen and #{$tab} {
+        width: 100%;
+      }
+    }
+  }
+  &.u-bd-t{
+    border-top: 1px solid #cacaca;
+  }
+  &.u-bd-b{
+    border-bottom: 1px solid #cacaca;
+  }
+  &--is_statement{
+    padding-top: (120-(52*1.35-52)/2)+px;
+    padding-bottom: (120-(13*2-13)/2)+px;;
+    @media screen and #{$tab} {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "TODO:name",
+  "description": "TODO:discription",
+  "keywords": "TODO:keywords",
+  "url": "",
+  "urls": {
+    "production": "/",
+    "staging": "/",
+    "development": ""
+  },
+  "ogpImage": "TODO:OGP"
+}

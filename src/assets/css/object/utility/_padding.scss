@@ -1,0 +1,36 @@
+/* padding - utility
+--------------------------------------------------------- */
+
+// 指定するpaddingの範囲を定義
+$min: 1;
+$max: 200;
+@for $i from $min through $max {
+  .u-pt#{$i} {
+		padding-top: #{$i}px;
+
+		@media screen and #{$tab} {
+			padding-top: #{$i/5*3}px;
+		}
+  }
+  .u-pr#{$i} {
+		padding-right: #{$i}px;
+
+		@media screen and #{$tab} {
+			padding-right: #{$i/5*3}px;
+		}
+  }
+  .u-pb#{$i} {
+		padding-bottom: #{$i}px;
+
+		@media screen and #{$tab} {
+			padding-bottom: #{$i/5*3}px;
+		}
+  }
+  .u-pl#{$i} {
+		padding-left: #{$i}px;
+
+		@media screen and #{$tab} {
+			padding-left: #{$i/5*3}px;
+		}
+  }
+}

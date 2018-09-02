@@ -1,0 +1,243 @@
+.p-single{
+  @media screen and #{$tab} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  h1:not(.p-single-title),h2,h3,h4,h5,h6{
+    @include font(24);
+    @include lh(24*1.5);
+    @include ls(100);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    @media screen and #{$tab} {
+      @include font(22);
+      @include lh(22*1.5);
+    }
+    @media screen and #{$sp-tab} {
+      @include font(20);
+      @include lh(20*1.5);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    @media screen and #{$sp} {
+      @include font(18);
+      @include lh(18*1.5);
+    }
+
+  }
+
+  p{
+    @include font(16);
+    @include lh(16*1.8);
+    @include ls(100);
+    margin: 20px 0;
+    color: #000;
+    @media screen and #{$sp} {
+      @include font(14);
+      @include lh(14*1.8);
+    }
+  }
+
+  blockquote{
+    position: relative;
+    margin: 40px 0;
+    padding: 10px 30px;
+    border: 1px solid #d7d7d7;
+    background-color: #f3f3f3;
+    z-index: 1;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    p{
+      @include font(14);
+      @include lh(14*1.8);
+      @include ls(100);
+      position: relative;
+      z-index: 3;
+    }
+
+    a{
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      font-style: normal;
+    }
+  }
+
+  picture{
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  table{
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 1px solid #cacaca;
+    tr{
+      border-top: 1px solid #cacaca;
+    }
+
+    th,td{
+      @include font(14);
+      @include lh(25.2);
+      @include ls(100);
+      margin-top: -((25.2-14)/2)+px;
+      margin-bottom: -((25.2-14)/2)+px;
+      color: $color-text;
+      vertical-align: middle;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      @media screen and #{$sp-tab} {
+        @include font(12);
+        @include lh(21);
+        display: block;
+        width: 100%!important;
+      }
+    }
+
+    th{
+      width: 275px;
+      padding-left: 30px;
+      text-align: left;
+      font-weight: normal;
+      @media screen and #{$tab} {
+        width: 30%;
+      }
+      @media screen and #{$sp-tab} {
+        padding-bottom: 12px;
+        padding-left: 0;
+      }
+    }
+
+    td{
+      padding-right: 30px;
+      @media screen and #{$sp-tab} {
+        padding-top: 0;
+      }
+    }
+  }
+
+  picture.p-single-thumbnail{
+    width: 100%;
+    margin-top: 0;
+  }
+  &-title{
+    @include font(24);
+    @include lh(24*1.5);
+    @include ls(100);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #000;
+    font-weight: normal;
+    @media screen and #{$tab} {
+      @include font(22);
+      @include lh(22*1.5);
+    }
+    @media screen and #{$sp-tab} {
+      @include font(20);
+      @include lh(20*1.5);
+    }
+    @media screen and #{$sp} {
+      @include font(18);
+      @include lh(18*1.5);
+    }
+  }
+
+  &-aside{
+    @include font(14);
+    @include lh(20);
+    @include ls(100);
+    display: block;
+    text-align: right;
+    color: #999;
+    @media screen and #{$sp} {
+      @include font(12);
+      @include lh(18);
+    }
+    &>*{
+      &:last-child{
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .p-single-author{
+    @include m-a;
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    &__img{
+      width: 100px;
+      height: 100px;
+      margin-top: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      @media screen and #{$sp} {
+        width: 70px;
+        height: 70px;
+      }
+      img{
+        height: auto;
+      }
+    }
+    &__body{
+      width: 500px;
+      @media screen and #{$tab} {
+        width: 60%;
+      }
+    }
+    p.p-single-author-name{
+      margin-top: -((32.4-18)/2)+px;
+      margin-bottom: (22-(32.4-18)/2)+px;
+      @media screen and #{$tab} {
+        margin-top: -((16*1.75-16)/2)+px;
+        margin-bottom: (18-(16*1.75-16)/2)+px;
+      }
+      @media screen and #{$sp} {
+        margin-top: -((14*1.75-14)/2)+px;
+        margin-bottom: (12-(14*1.75-14)/2)+px;
+      }
+    }
+    p.p-single-author-career{
+      margin-top: -((25.2-14)/2)+px;
+      margin-bottom: -((25.2-14)/2)+px;
+    }
+  }
+
+  ul:not(.c-sns-share) > ::before, .c-single-info ol > ::before{
+    content: "・";
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #062159;
+  }
+  a:hover, button:hover, a:focus, button:focus {
+    cursor: pointer;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  #entry {
+    .p-section__inner {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  div {
+    img {
+      height: auto;
+    }
+  }
+
+}

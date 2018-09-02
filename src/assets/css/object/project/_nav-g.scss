@@ -1,0 +1,31 @@
+.p-nav-g{
+  @media screen and #{$tab} {
+    display: none;
+  }
+
+  &__inner{
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  &-item{
+    margin-right: 20-3px;
+    margin-left: 20-3px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      @include font(16);
+      @include lh(16);
+      @include ls(0);
+      padding: 3px;
+      $color-text: $color-text;
+    }
+  }
+}

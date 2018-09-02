@@ -1,0 +1,27 @@
+/* display - utility
+--------------------------------------------------------- */
+
+.u-d-f{
+  -js-display: flex;
+  display: flex;
+}
+
+.u-d-tb {
+  display: table;
+}
+
+.u-d-tbc {
+  display: table-cell;
+}
+
+.u-d-b {
+  display: block;
+}
+
+.u-d-ib {
+  display: inline-block;
+}
+
+.u-d-n{
+  display: none;
+}

@@ -1,0 +1,28 @@
+.c-icon-circle{
+  @include center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid $color-main;
+  border-radius: 50%;
+  background-color: #fff;
+
+  &:before{
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
+
+  @media screen and #{$tab} {
+    width: 100%;
+    height: auto;
+  }
+
+  &__01{
+    top: 55%;
+    width: 76px;
+
+    @media screen and #{$tab} {
+      width: 70%;;
+    }
+  }
+}

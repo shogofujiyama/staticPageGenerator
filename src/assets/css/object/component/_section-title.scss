@@ -1,0 +1,53 @@
+// .c-section-title
+
+// .c-section-title--text_vertical
+
+// .c-section-title--border_both
+// .c-section-title--border_both_upsidedown
+
+// todo 色違いの場合のベストソリューション
+
+.c-section-title{
+  position: relative;
+
+  &--text_vertical{
+    &>*{
+      display: block;
+    }
+  }
+
+  &--border_both{
+    @extend .c-section-title;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .c-section-title__small{
+      display: block;
+    }
+
+    &:before,
+    &:after{
+      content: "";
+      display: block;
+
+      @media screen and #{$tab} {
+        display: none;
+      }
+    }
+  }
+
+  &--border_double{
+    @extend .c-section-title--border_both;
+  }
+}
+
+.c-section-title:before,
+.c-section-title:after {
+  display: none\9; /* IE8 以下 */
+}
+.c-section-title:before:not(:target),
+.c-section-title:after:not(:target) {
+  display: none\9; /* IE9 */
+}

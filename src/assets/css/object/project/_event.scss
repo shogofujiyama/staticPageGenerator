@@ -1,0 +1,102 @@
+.p-event-detail{
+  &>*{
+    @media screen and #{$tab} {
+      margin-bottom: 0;
+    }
+    @media screen and #{$sp} {
+      width: 100%!important;
+      padding-right: 0!important;
+      padding-left: 0!important;
+    }
+  }
+
+  .m-spread__body{
+    margin-top: -((32.4-18)/2)+px;
+    @media screen and #{$tab} {
+      width: 65%;
+      //padding-left: 2%;
+      // 画像足したら戻す
+    }
+  }
+
+  .m-spread__img{
+    @media screen and #{$tab} {
+      width: 35%;
+      padding-right: 2%;
+      margin-bottom: 30px;
+    }
+  }
+  &-title{
+    @include font(18);
+    @include lh(32.4);
+    @include ls(100);
+    margin-bottom: (32-(32.4-18)/2-(14*1.35-14)/2)+px;
+    color: $color-text;
+    font-weight: normal;
+    @media screen and #{$sp-tab} {
+      @include font(16);
+      @include lh(16*1.75);
+      margin-bottom: 12px;
+    }
+  }
+  &-aside{
+    @include font(14);
+    @include lh(14*1.35);
+    @include ls(100);
+    margin-bottom: (26-(14*1.35-14)/2-(25.2-14)/2)+px;
+    color: $color-text;
+    @media screen and #{$sp-tab} {
+      @include font(12);
+      @include lh(12*1.75);
+      margin-bottom: 10px;
+    }
+  }
+  &-centence{
+    @include font(14);
+    @include lh(25.2);
+    @include ls(100);
+    margin-bottom: (30-(25.2-14)/2)+px;
+    color: $color-text;
+    @media screen and #{$sp-tab} {
+      @include font(12);
+      @include lh(12*1.75);
+      margin-bottom: 30px;
+    }
+  }
+  .c-button{
+    margin-left: 0;
+    @media screen and #{$tab} {
+      width: 100%;
+    }
+  }
+}
+
+.p-event-voice{
+  margin-bottom: -30px;
+  &>li{
+    margin-bottom: 30px;
+  }
+  &-title{
+    margin-bottom: (20-(32.4-18)/2)+px;
+  }
+}
+
+.p-event-faq{
+  &>li{
+    margin-bottom: 40px;
+    @media screen and #{$tab} {
+      margin-bottom: 30px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+  }
+  &_q{
+    margin-bottom: (22-(25.2-14)/2)+px;
+    color: $color-text;
+  }
+  &_a{
+    color: $color-text;
+  }
+}

@@ -1,0 +1,36 @@
+.c-button{
+  @include m-a;
+  @include font(16);
+  @include lh(16);
+  @include ls(50);
+  display: block;
+  width: 260px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #fff;
+
+  @media screen and #{$tab} {
+    @include font(14);
+    @include lh(14);
+    width: 92%;
+    padding-top: (23/5*3)+px;
+    padding-bottom: (23/5*3)+px;
+  }
+
+  &:hover,
+  &:focus{
+    color: #fff;
+    background-color: #000;
+    opacity: 1;
+  }
+
+  &--size-small{
+    @extend .c-button;
+    width: 160px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

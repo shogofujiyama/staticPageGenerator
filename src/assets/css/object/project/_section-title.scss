@@ -1,0 +1,60 @@
+.p-section-title{
+  @include font(24);
+  @include lh(24);
+  @include ls(100);
+  margin-bottom: 60px;
+  color: $color-text;
+  @media screen and #{$tab} {
+    @include font(22);
+    @include lh(22);
+    margin-bottom: 40px;
+  }
+  @media screen and #{$sp} {
+    @include font(18);
+    @include lh(18);
+    margin-bottom: 25px;
+  }
+
+  &__small{
+    @include font(18);
+    @include lh(18);
+    margin-top: 14px;
+    @media screen and #{$tab} {
+      @include font(16);
+      @include lh(16);
+      margin-top: 8px;
+    }
+    @media screen and #{$sp} {
+      @include font(14);
+      @include lh(14);
+    }
+  }
+
+  &:before,
+  &:after{
+    width: 222px;
+    height: 4px;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+  }
+
+  &:before{
+    margin-right: 66px;
+  }
+
+  &:after{
+    margin-left: 66px;
+  }
+
+  &.u-color-white{
+    color: #fff;
+
+    &:before,
+    &:after{
+      width: 222px;
+      height: 4px;
+      border-top-color: #fff;
+      border-bottom-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.l-header{
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 999;
+  background: rgba(255,255,255,.9);
+
+  @media screen and #{$tab} {
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+  }
+}

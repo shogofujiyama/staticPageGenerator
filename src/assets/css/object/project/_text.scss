@@ -1,0 +1,242 @@
+.p-text{
+  &-18{
+    @include font(18);
+    @include lh(32.4);
+    @include ls(100);
+    margin-top: -((32.4-18)/2)+px;
+    margin-bottom: -((32.4-18)/2)+px;
+    color: $color-text;
+    font-weight: normal;
+    @media screen and #{$tab} {
+      @include font(16);
+      @include lh(16*1.75);
+      margin-top: -((16*1.75-16)/2)+px;
+      margin-bottom: -((16*1.75-16)/2)+px;
+    }
+    @media screen and #{$sp} {
+      @include font(14);
+      @include lh(14*1.75);
+      margin-top: -((14*1.75-14)/2)+px;
+      margin-bottom: -((14*1.75-14)/2)+px;
+    }
+  }
+
+  &-14{
+    @include font(14);
+    @include lh(25.2);
+    @include ls(100);
+    margin-top: -((25.2-14)/2)+px;
+    margin-bottom: -((25.2-14)/2)+px;
+    color: $color-text;
+    @media screen and #{$tab} {
+      @include font(12);
+      @include lh(12*1.75);
+    }
+  }
+
+  &-10{
+    @include font(10);
+    @include lh(14);
+    @include ls(100);
+    margin-top: -((18.2-14)/2)+px;
+    margin-bottom: -((18.2-14)/2)+px;
+    color: $color-text;
+    @media screen and #{$tab} {
+      @include font(10);
+      @include lh(12*1.75);
+    }
+  }  
+  
+  &-title-sub{
+    @include font(18);
+    @include lh(18);
+    @include ls(100);
+    margin-bottom: 30px;
+    color: $color-text;
+    font-weight: normal;
+    @media screen and #{$tab} {
+      @include font(16);
+      @include lh(16);
+      margin-bottom: 20px;
+    }
+    @media screen and #{$sp} {
+      @include font(14);
+      @include lh(14);
+    }
+  }
+
+  &-statement-title{
+    width: 570px;
+    margin-bottom: 60px;
+    // @include font(52);
+    // @include lh(52*1.35);
+    // margin-bottom: 40px;
+    // font-weight: normal;
+    @media screen and #{$sp-tab} {
+      width: 92%;
+      margin-bottom: 40px;
+      // @include font(28);
+      // @include lh(28*1.75);
+      // margin-bottom: 32px;
+    }
+    @media screen and #{$sp} {
+      // @include font(26);
+      // @include lh(26*1.75);
+      // margin-bottom: 32px;
+    }
+
+    span{
+      &:nth-child(1){
+        @include ls(92);
+      }
+      &:nth-child(2){
+        @include ls(72);
+      }
+      &:nth-child(3){
+        @include ls(52);
+      }
+      &:nth-child(4){
+        @include ls(52);
+      }
+      &:nth-child(5){
+        @include ls(52);
+      }
+      &:nth-child(6){
+        @include ls(-88);
+      }
+      &:nth-child(7){
+        @include ls(-8);
+      }
+      &:nth-child(8){
+        @include ls(12);
+      }
+      &:nth-child(9){
+        @include ls(32);
+      }
+      &:nth-child(10){
+        @include ls(72);
+      }
+      &:nth-child(11){
+        @include ls(132);
+      }
+      &:nth-child(12){
+        @include ls(-68);
+      }
+      &:nth-child(13){
+        @include ls(-28);
+      }
+      &:nth-child(14){
+        @include ls(32);
+      }
+      &:nth-child(15){
+        @include ls(12);
+      }
+      &:nth-child(16){
+        @include ls(52);
+      }
+      &:nth-child(17){
+        @include ls(52);
+      }
+      &:nth-child(18){
+        @include ls(-8);
+      }
+      &:nth-child(19){
+        @include ls(12);
+      }
+      &:nth-child(20){
+        @include ls(32);
+      }
+      &:nth-child(21){
+        @include ls(72);
+      }
+      &:nth-child(22){
+        @include ls(132);
+      }
+      &:nth-child(23){
+        @include ls(-48);
+      }
+      &:nth-child(24){
+        @include ls(-48);
+      }
+      &:nth-child(25){
+        @include ls(12);
+      }
+      &:nth-child(26){
+        @include ls(52);
+      }
+      &:nth-child(27){
+        @include ls(12);
+      }
+    }
+  }
+  &-statement-centence{
+    @include font(14);
+    @include lh(36);
+    @include ls(92);
+    margin-bottom: 40px;
+    @media screen and #{$sp} {
+      @include font(12);
+      @include lh(12*2.4);
+      margin-bottom: 24px;
+    }
+  }
+  &-statement-person{
+    @include font(12);
+    @include lh(25);
+    @include ls(92);
+    @media screen and #{$sp} {
+      @include font(12);
+      @include lh(25);
+    }
+  }
+
+  &-thumbnail-title{
+    @include font(14);
+    @include lh(26.6);
+    @include ls(100);
+    color: $color-text;
+    font-weight: normal;
+    @media screen and #{$tab} {
+      @include font(12);
+      @include lh(12*1.75);
+    }
+  }
+
+  &-news-title{
+    @include font(14);
+    @include lh(24.5);
+    @include ls(100);
+    color: $color-text;
+    font-weight: normal;
+    @media screen and #{$sp} {
+      @include font(12);
+      @include lh(12*1.75);
+    }
+  }
+
+  &-news-aside{
+    @include font(14);
+    @include lh(14);
+    @include ls(100);
+    color: $color-text;
+    @media screen and #{$sp} {
+      @include font(12);
+      @include lh(12);
+    }
+  }
+
+  &-relationship{
+    @include font(14);
+    @include lh(24.5);
+    @include ls(100);
+    margin-bottom: (70-(24.5-14)/2)+px;
+    color: $color-text;
+  }
+
+  &-sns{
+    @include font(14);
+    @include lh(24.5);
+    @include ls(100);
+    margin-bottom: (30-(24.5-14)/2)+px;
+  }
+}

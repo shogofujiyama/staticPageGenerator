@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%; // 1rem=10px
+}
+
+body {
+  @include font(16);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","ＭＳ Ｐ明朝", "MS PMincho",serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,textarea, select{
+  font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","ＭＳ Ｐ明朝", "MS PMincho",serif;
+}
+
+*::selection{
+  background-color: #03a9f4; /* Safari */
+  color: #fff;
+}
+
+*::-moz-selection{
+  background-color: #03a9f4; /* Safari */
+  color: #fff;
+}

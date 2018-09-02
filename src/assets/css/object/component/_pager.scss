@@ -1,0 +1,51 @@
+.c-pager{
+  @include m-a;
+  -js-display: flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  margin-right: -10px;
+
+  @media screen and #{$tab} {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &>*{
+    width: 64px;
+    height: 44px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+
+    &>a{
+      @include font(14);
+      @include lh(44);
+      display: block;
+      width: 100%;
+      color: $color-main;
+      text-align: center;
+      font-weight: 600;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    &>span{
+      @include font(14);
+      @include lh(44);
+      display: block;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      background-color: $color-main;
+      border-radius: 4px;
+    }
+  }
+}

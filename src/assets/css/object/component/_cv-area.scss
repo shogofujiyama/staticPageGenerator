@@ -1,0 +1,19 @@
+.c-cv-area{
+  @media screen and #{$tab} {
+    @include m-a;
+    width: 92%;
+  }
+
+  &__text{
+    @include font(16);
+    @include lh(28);
+    @include ls(100);
+    color: $color-text-gray;
+    text-align: center;
+    @media screen and #{$tab} {
+      @include font(14);
+      @include lh(14*1.75);
+      margin-bottom: 24px;
+    }
+  }
+}

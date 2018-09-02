@@ -1,0 +1,41 @@
+.p-index-topcatch{
+  position: relative;
+
+  &__inner{
+    @include m-a;
+    position: relative;
+    width: 520px;
+    height: 730px;
+    padding-top: (730-164)/2+px;
+    padding-bottom: (730-164)/2+px;
+    @media screen and #{$tab} {
+      width: 100%;
+      height: auto;
+      padding-top: 160px;
+      padding-bottom: 160px;
+    }
+  }
+
+  &__cv-area{
+    @include font(14);
+    @include lh(14);
+    @include ls(-24);
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 174px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff;
+    background: #d2a815;
+    text-align: center;
+  }
+
+  picture{
+    width:520px;
+    @media screen and #{$tab} {
+      @include m-a;
+      width: 92%;
+    }
+  }
+}
